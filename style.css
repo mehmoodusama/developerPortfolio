@@ -1,4 +1,4 @@
-/* General */ body { margin: 0; font-family: Arial, sans-serif; overflow: hidden; }
+/* General */ body { zoom:90% ;  margin: 0; font-family: Arial, sans-serif; overflow: hidden; }
 
 
 /* Background images for each page */ 
@@ -208,3 +208,4 @@ footer {
 position: fixed; /* stays at bottom while scrolling */ bottom: 0; left: 0; width: 100%; /* span the full page width */ color:#c6c8cc; /* footer text color */ position: absolute; left: 0; padding: 0px 1150px; /* space inside */ font-family: Arial, sans-serif; font-size: 17px; cursor: pointer; border-top: 0.5px solid #c6c8cc; /* optional: thin line for separation */ 
 
 }
+
