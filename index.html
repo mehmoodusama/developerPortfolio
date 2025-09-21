@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Usama Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><button onclick="openTab('home')">Home</button></li>
+      <li><button onclick="openTab('about')">About</button></li>
+      <li><button onclick="openTab('projects')">Projects</button></li>
+      <li><button onclick="openTab('contact')">Contact</button></li>
+    </ul>
+  </nav>
+
+<!-- Page 1 - Home -->
+<section id="home" class="tab active">
+  
+  <div class="line-with-dots">
+    <div class="line"></div>
+    <div class="dots">⋯</div>
+  </div>
+
+  <div class="circle"></div>
+  <div class="circle1"></div>
+
+  <!-- Profile -->
+  <div class="profile">
+    <img src="images/profile.jpg" alt="My Profile Picture">
+  </div>
+ 
+  <!-- Intro text -->
+  <div class="intro-text">
+    <h1>Usama Mehmood</h1>
+    <p>BI Developer | IBM Maximo Functional <br>
+     | Power BI • BIRT • SQL • Python</p>
+  </div>
+
+</section>
+
+
+
+  <!-- Page 2 - About -->
+  <section id="about" class="tab">
+  <div class="line-with-dots">
+    <div class="line1"></div>
+    <div class="dots1">⋯</div>
+    <div class="line2"></div>
+  </div>
+  <div class="about-image1">
+      <img src="images/profile-about1.jpg" alt="Profile Picture">
+    </div>
+  
+   <div class="about-text">
+    <h1>Introduction</h1>
+    <h2>About me</h2>
+    <p>I come from a non-IT background, having completed my BS in Arabic,<br>
+       but my passion for learning led me to explore the world of technology.<br>
+       What started as curiosity gradually turned into a professional journey, <br>
+      and today I work as a Microsoft BI Developer.<br><br>
+
+      Over the past 2 years, I have gained hands-on experience in Power BI, SQL,<br> 
+               BIRT Reporting, and Python, with a strong focus on building insightful dashboards<br>
+      and reports. I also bring expertise in IBM Maximo Functional, where I’ve worked on <br>
+     asset management, inventory, work orders, and preventive maintenance.<br><br>
+
+     My unique journey from humanities to IT has given me a fresh perspective <br>
+     — I believe in continuous growth, adaptability, and using data to drive<br>
+      meaningful business decisions.</p>
+  </div>
+  </section>
+
+  <!-- Page 3 - Projects -->
+  <section id="projects" class="tab">
+  <div class="line-with-dots">
+    <div class="line"></div>
+    <div class="dots">⋯</div>
+  </div>
+
+  <div class = "projects-section">
+
+    <h1>Projects</h1>
+
+     <!-- Project 1 -->
+     <div class="project-card">
+      <h2>
+        <a href="projects/index.html" target="_blank">Project 1</a>
+      </h2>
+      <p>A short description about Project 1 goes here.</p>
+     </div>
+
+    <!-- Project 2 -->
+    <div class="project-card">
+      <h2>
+        <a href="projects/index.html" target="_blank">Project 2</a>
+      </h2>
+      <p>A short description about Project 2 goes here.</p>
+    </div>
+   
+      <!-- Project 3 -->
+    <div class="project-card">
+      <h2>
+        <a href="projects/index.html" target="_blank">Project 3</a>
+      </h2>
+      <p>A short description about Project 3 goes here.</p>
+    </div>
+
+  </section>
+
+  <!-- Page 4 - Contact -->
+  <section id="contact" class="tab">
+
+  <div class="contact-container">
+    
+    <!-- Left block: Contact Form -->
+    <div class="contact-box">
+      <h2>Get in touch</h2>
+      <form id="contactForm">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter your name"required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your Email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="5" placeholder="Write your message.." required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </div>
+
+    <!-- Right block: Reach Out -->
+    <div class="contact-box">
+      <h2>Follow me</h2>
+      <p>You can also connect with me here:</p>
+      <ul class="reach-out">
+        <li><a href="https://github.com/mehmoodusama" target="_blank">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/usama-mehmood-33504b365/" target="_blank">LinkedIn</a></li>
+      </ul>
+    </div>
+
+  </div>
+  
+  </section>
+
+ <footer>
+  <p>© Usama Mehmood 2025</p>
+ </footer>
+
+ <script src="script.js"></script>
+
+</body>
+</html>
+
+
+

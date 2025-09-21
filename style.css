@@ -1,0 +1,210 @@
+/* General */ body { margin: 0; font-family: Arial, sans-serif; overflow: hidden; }
+
+
+/* Background images for each page */ 
+#home { background: url("images/home-bg.jpg") no-repeat center center/cover; }
+#about { background: url("images/about-bg.jpg") no-repeat center center/cover; }
+
+nav { background: none; padding: 18px; text-align: right; position: fixed; top: 0; width: 90%; z-index: 10; }
+
+nav ul { list-style: none; margin: 0; padding: 0; } 
+nav ul li { display: inline; margin: 0 19px; } 
+nav ul li button { background: none; border: none; color: #c6c8cc; font-size: 18px; cursor: pointer; padding: 8px 12px; transition: color 0.3s ease, border-bottom 0.3s ease; }
+nav ul li button:hover { color: #2d9be3; } 
+nav ul li button.active { color: #2d9be3; /* text color when active */ }
+ /* Sections */ 
+.tab { display: none; height: 100vh; width: 100%; background: #3c71a9; color: white; position: absolute; top: 0; left: 0; padding-top: 60px; text-align: center; } 
+.tab.active { display: block; } 
+/* Shapes */ 
+/* Line */ 
+.line { width: 90%; /* adjust line length */ height: 3px; background-color: #c6c8cc; margin: auto; /* centers line */ z-index: 2; } 
+/* Dots */ 
+.dots { display: flex; justify-content: center; /* centers dots horizontally */ gap: 15px; /* space between dots */ font-size: 40px; color: #c6c8cc; margin-top: -4px; /* space below line */ position: relative; left: 44.1%; /* move 20% right */ top: -10%; /* move 10% up */} 
+
+/*about page lines and dots */ 
+/* Line */ 
+.line1 { width: 55%; /* adjust line length */ height: 3px; background-color: #c6c8cc; margin-left : 40% ; } 
+/* Dots */ 
+.dots1 { display: flex; justify-content: center; /* centers dots horizontally */ gap: 15px; /* space between dots */ font-size: 40px; color: #c6c8cc; margin-top: -4px; /* space below line */ position: relative; left: 44.1%; /* move 20% right */ top: -10%; /* move 10% up */ } 
+
+/* below Line on about */
+ .line2 { width: 55%; /* adjust line length */ height: 3px; background-color: #c6c8cc; margin-left: 40%; /* push it from left */ margin-top: 489px; /* push it down the page */ } 
+
+.circle { width: 430px; height: 430px; border-radius: 50%; background: #ccc; box-shadow: 0 0 20px rgba(0,0,0,0.6); position: absolute; /* allows free placement */ top: 135px; /* distance from top */ left: 902px; /* distance from left */ }
+ 
+.circle1 { width: 420px; height: 420px; border-radius: 50%; background: #3c71a9; position: absolute; /* allows free placement */ top: 140px; /* distance from top */ left: 907px; /* distance from left */ } /* Container for two blocks */ 
+
+.contact-container { 
+display: flex; 
+justify-content: center; 
+gap: 50px;          /* space between blocks */ 
+margin-top: 60px; 
+flex-wrap: wrap;      /* makes it responsive */ 
+} 
+/* Each block */
+ 
+.contact-box {
+ width: 400px;
+ padding: 20px;
+ background: #255273; 
+border-radius: 12px; 
+box-shadow: 0px 6px 12px rgba(0,0,0,0.4);
+ text-align: left; 
+} 
+
+/* Heading */ 
+.contact-box h2 
+{
+ text-align: center;
+ margin-bottom: 20px;
+ font-family: "Poppins", sans-serif; 
+color: #2d9be3; 
+}
+
+.contact-box p
+{ 
+color: #c6c8cc ;
+}
+
+/* Change label text color */
+#contactForm label {
+  color: #c6c8cc; 
+  
+}
+
+ /* Inputs + textarea */ 
+.contact-box input, .contact-box textarea {
+ width: 95%; 
+padding: 10px; 
+margin-bottom: 15px;
+ border: 1px solid #c6c8cc;
+ border-radius: 6px;
+ font-size: 16px; 
+}
+
+ /* Button */ 
+.contact-box button
+ { width: 100%; padding: 12px; background: #2d9be3; color:#c6c8cc ; border: none; border-radius: 6px; font-size: 18px; cursor: pointer; transition: background 0.3s; } 
+
+.contact-box button:hover { background: #1c7bbb; } 
+/* Reach Out Links */ 
+.reach-out 
+{ list-style: none; padding: 0; }
+ .reach-out li { margin: 10px 0; } 
+.reach-out a { text-decoration: none; font-size: 20px; color: #2d9be3; font-weight: bold; transition: color 0.3s; } 
+.reach-out a:hover { color: #1c7bbb; } 
+
+.profile 
+{ position: absolute; /* allows free placement */ top: 147px; /* distance from top */ left: 914px; /* distance from left */ } 
+
+.profile img 
+{ width: 405px; /* size of image */ height: 405px; border-radius: 50%; /* makes it round */ object-fit: cover; /* crops properly */ } 
+
+.intro-text 
+{ position: absolute; /* allows free placement */ top: 200px; /* move text down from top of page */ left: 150px; /* move text right from left of page */ text-align: left; /* keep text aligned properly */ }
+
+.intro-text h1 { font-family: "Arial Rounded MT Bold"; font-size: 70px; font-weight: bold; color: #c6c8cc; margin: 0; } 
+
+.intro-text p { font-family: "Goudy Type"; font-size: 20px; color:#c6c8cc; margin-top: 10px; }
+ /* Flex container */ 
+.about-container { display: flex; /* THIS is the key */ align-items: center; justify-content: center; gap: 50px; flex-wrap: nowrap; /* prevent wrapping */ } /* Left side */ 
+
+
+.about-text
+{
+position: absolute ;
+top: 90px ;
+left: 570px ;
+text-align: left ;
+
+}
+.about-text h1
+{
+font-family: "Arial Rounded MT Bold"; 
+font-size: 55px;
+font-weight: bold;
+color: #c6c8cc;
+margin: 0;
+}
+.about-text h2
+{
+font-family: "Arial Rounded MT Bold";
+font-size: 30px; 
+font-weight: bold; 
+color: #c6c8cc;
+margin-top: 30px;
+}
+
+.about-text p 
+{
+font-family: "Goudy Type";
+font-size: 20px; 
+color:#c6c8cc; 
+margin-top: -8px;
+}
+
+/* about page Image */
+.about-image1 img {
+  width: 490px; 
+  height: 545px;
+  border-radius: 2%;
+  background: #ccc;
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+  position: absolute;          /* allows free placement */
+  top: 50px;     /* distance from top */ 
+  left: 50px;    /* distance from left */ 
+ 
+}
+ /* ---------- Projects Section ---------- */
+    .projects-section {
+      max-width: 900px;
+      margin: -60px auto;
+      padding: 5px;
+    }
+
+    .projects-section h1 {
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 30px;
+      color: #c6c8cc;
+    }
+
+    /* ---------- Project Cards ---------- */
+    .project-card {
+      background-color: #255273;
+      border: 1px solid #ddd;
+      padding: 10px;
+      margin: 20px 0;
+      border-radius: 12px;
+      box-shadow: 0px 6px 12px rgba(0,0,0,0.4);
+      transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    }
+
+    .project-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 10px 20px rgba(0,0,0,0.6);
+    }
+
+    /* ---------- Links inside project cards ---------- */
+    .project-card a {
+      color: #c6c8cc;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.3rem;
+    }
+
+    .project-card a:hover {
+      text-decoration: underline;
+      color: #ffffff;
+    }
+
+    /* ---------- Paragraph inside cards ---------- */
+    .project-card p {
+      margin-top: 10px;
+      font-size: 1rem;
+      color: #e0e0e0;
+   }
+footer { 
+position: fixed; /* stays at bottom while scrolling */ bottom: 0; left: 0; width: 100%; /* span the full page width */ color:#c6c8cc; /* footer text color */ position: absolute; left: 0; padding: 0px 1150px; /* space inside */ font-family: Arial, sans-serif; font-size: 17px; cursor: pointer; border-top: 0.5px solid #c6c8cc; /* optional: thin line for separation */ 
+
+}
